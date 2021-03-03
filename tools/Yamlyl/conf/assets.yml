@@ -1,0 +1,23 @@
+---
+test-assets:
+  gflag_file: default_gflags.conf
+  tests:
+  - name: jpg-to-webp-01
+    input: assets/lenna.jpg
+    param: 200w.webp
+    ouput: assets/lenna@200w.webp
+  - name: jpg-to-webp
+    input: assets/lenna.jpg
+    param: .webp
+    ouput: assets/lenna.webp
+  - name: jpg-with-cmyk-color
+    input: assets/jpg-with-cmyk.jpg
+    param: 400w.webp
+    ouput: assets/jpg-with-cmyk@400w.webp
+  - name: jpg-with-bad-data
+    input: assets/bad-data-jpg-1.jpg
+    param: 200w.webp
+    ouput: assets/bad-data-jpg-1@200w.webp
+logging:
+  level: info
+  path: data/tlog.log

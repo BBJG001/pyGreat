@@ -1,0 +1,9 @@
+grade:
+  boy:
+    - name: 二狗蛋
+      age: 20
+    - name: 王三
+      age: 18
+  girl:
+    - name: 李红
+      age: 18

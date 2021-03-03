@@ -1,0 +1,17 @@
+// 添加到源码第一行的注释
+digraph Graphtest {
+	graph [rankdir=TB]
+	node [color=black fontcolor=black fontname=FangSong fontsize=12 shape=box style=rounded]
+	edge [color="#999999" fontcolor="#888888" fontname=FangSong fontsize=10]
+	A [label="this is A" color=blue fontcolor=blue shape=circle]
+	B [label="this is B"]
+	C [label="this is C"]
+	D [label="this is D"]
+	E [label="this is E"]
+	F [label="this is F"]
+	A -> B [label=test dir=both style=dotted]
+	A -> C
+	B -> D
+	B -> E
+	E -> F
+}

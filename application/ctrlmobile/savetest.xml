@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<html>
+    <body>
+        <hierarchy rotation="0">
+            <node bounds="[0,0][1600,2560]" checkable="false" checked="false" class="android.widget.FrameLayout"
+                  clickable="false" content-desc="" enabled="true" focusable="false" focused="false" index="0"
+                  long-clickable="false" package="com.huawei.android.launcher" password="false" resource-id=""
+                  scrollable="false" selected="false" text="">
+                <node bounds="[0,0][1600,2560]" checkable="false" checked="false" class="android.widget.LinearLayout"
+                      clickable="false" content-desc="" enabled="true" focusable="false" focused="false" index="0"
+                      long-clickable="false" package="com.huawei.android.launcher" password="false" resource-id=""
+                      scrollable="false" selected="false" text="">
+                    <node bounds="[0,0][1600,2560]" checkable="false" checked="false" class="android.widget.FrameLayout"
+                          clickable="false" content-desc="" enabled="true" focusable="false" focused="false" index="0"
+                          long-clickable="false" package="com.huawei.android.launcher" password="false"
+                          resource-id="android:id/content" scrollable="false" selected="false" text="">
+                        <node bounds="[0,0][1600,2560]" checkable="false" checked="false"
+                              class="android.widget.FrameLayout" clickable="false" content-desc="" enabled="true"
+                              focusable="false" focused="false" index="0" long-clickable="false"
+                              package="com.huawei.android.launcher" password="false"
+                              resource-id="com.huawei.android.launcher:id/launcher_root_view" scrollable="false"
+                              selected="false" text="">
+                            <node bounds="[0,0][1600,2560]" checkable="false" checked="false"
+                                  class="android.widget.FrameLayout" clickable="false" content-desc="" enabled="true"
+                                  focusable="false" focused="false" index="0" long-clickable="false"
+                                  package="com.huawei.android.launcher" password="false"
+                                  resource-id="com.huawei.android.launcher:id/drag_layer" scrollable="false"
+                                  selected="false" text="">
+                                <node bounds="[0,0][1600,2560]" checkable="false" checked="false"
+                                      class="android.view.ViewGroup" clickable="false" content-desc="�� 2 ������ 2 ��"
+                                      enabled="true" focusable="false" focused="false" index="0" long-clickable="false"
+                                      package="com.huawei.android.launcher" password="false"
+                                      resource-id="com.huawei.android.launcher:id/workspace" scrollable="true"
+                                      selected="false" text="">
+                                    <node bounds="[0,0][1600,2142]" checkable="false" checked="false"
+                                          class="android.view.ViewGroup" clickable="true" content-desc="" enabled="true"
+                                          focusable="false" focused="false" index="1" long-clickable="true"
+                                          package="com.huawei.android.launcher" password="false"
+                                          resource-id="com.huawei.android.launcher:id/workspace_screen"
+                                          scrollable="false" selected="false" text="">
+                                        <node bounds="[38,0][1562,2124]" checkable="false" checked="false"
+                                              class="android.view.ViewGroup" clickable="false" content-desc=""
+                                              enabled="true" focusable="false" focused="false" index="0"
+                                              long-clickable="false" package="com.huawei.android.launcher"
+                                              password="false" resource-id="" scrollable="false" selected="false"
+                                              text="">
+                                            <node bounds="[38,92][292,600]" checkable="false" checked="false"
+                                                  class="android.widget.TextView" clickable="true"
+                                                  content-desc="��������" enabled="true" focusable="true"
+                                                  focused="false" index="0" long-clickable="true"
+                                                  package="com.huawei.android.launcher" password="false" resource-id=""
+                                                  scrollable="false" selected="false" text="��������"></node>
+                                            <node bounds="[292,92][546,600]" checkable="false" checked="false"
+                                                  class="android.widget.LinearLayout" clickable="true"
+                                                  content-desc="�ļ��� ��Ϸ" enabled="true" focusable="true"
+                                                  focused="false" index="1" long-clickable="true"
+                                                  package="com.huawei.android.launcher" password="false" resource-id=""
+                                                  scrollable="false" selected="false" text="">
+                                                <node bounds="[334,225][504,395]" checkable="false" checked="false"
+                                                      class="android.widget.ImageView" clickable="false" content-desc=""
+                                                      enabled="true" focusable="false" focused="false" index="0"
+                                                      long-clickable="false" package="com.huawei.android.launcher"
+                                                      password="false"
+                                                      resource-id="com.huawei.android.launcher:id/preview_background"
+                                                      scrollable="false" selected="false" text=""></node>
+                                                <node bounds="[297,403][541,600]" checkable="false" checked="false"
+                                                      class="android.widget.TextView" clickable="false" content-desc=""
+                                                      enabled="true" focusable="false" focused="false" index="1"
+                                                      long-clickable="false" package="com.huawei.android.launcher"
+                                                      password="false"
+                                                      resource-id="com.huawei.android.launcher:id/folder_icon_name"
+                                                      scrollable="false" selected="false" text="��Ϸ"></node>
+                                            </node>
+                                            <node bounds="[546,92][800,600]" checkable="false" checked="false"
+                                                  class="android.widget.TextView" clickable="true" content-desc="SSRR"
+                                                  enabled="true" focusable="true" focused="false" index="2"
+                                                  long-clickable="true" package="com.huawei.android.launcher"
+                                                  password="false" resource-id="" scrollable="false" selected="false"
+                                                  text="SSRR"></node>
+                                            <node bounds="[800,92][1054,600]" checkable="false" checked="false"
+                                                  class="android.widget.TextView" clickable="true"
+                                                  content-desc="Aptoide" enabled="true" focusable="true" focused="false"
+                                                  index="3" long-clickable="true" package="com.huawei.android.launcher"
+                                                  password="false" resource-id="" scrollable="false" selected="false"
+                                                  text="Aptoide"></node>
+                                            <node bounds="[1054,92][1308,600]" checkable="false" checked="false"
+                                                  class="android.widget.TextView" clickable="true"
+                                                  content-desc="ADB wireless by Henry" enabled="true" focusable="true"
+                                                  focused="false" index="4" long-clickable="true"
+                                                  package="com.huawei.android.launcher" password="false" resource-id=""
+                                                  scrollable="false" selected="false"
+                                                  text="ADB wireless by Henry"></node>
+                                            <node bounds="[1308,92][1562,600]" checkable="false" checked="false"
+                                                  class="android.widget.TextView" clickable="true"
+                                                  content-desc="�ն�ģ����" enabled="true" focusable="true"
+                                                  focused="false" index="5" long-clickable="true"
+                                                  package="com.huawei.android.launcher" password="false" resource-id=""
+                                                  scrollable="false" selected="false" text="�ն�ģ����"></node>
+                                            <node bounds="[38,600][292,1108]" checkable="false" checked="false"
+                                                  class="android.widget.TextView" clickable="true"
+                                                  content-desc="����ADB" enabled="true" focusable="true" focused="false"
+                                                  index="6" long-clickable="true" package="com.huawei.android.launcher"
+                                                  password="false" resource-id="" scrollable="false" selected="false"
+                                                  text="����ADB"></node>
+                                            <node bounds="[292,600][546,1108]" checkable="false" checked="false"
+                                                  class="android.widget.LinearLayout" clickable="true"
+                                                  content-desc="�ļ��� �����  1 ��֪ͨ" enabled="true" focusable="true"
+                                                  focused="false" index="7" long-clickable="true"
+                                                  package="com.huawei.android.launcher" password="false" resource-id=""
+                                                  scrollable="false" selected="false" text="">
+                                                <node bounds="[334,733][504,903]" checkable="false" checked="false"
+                                                      class="android.widget.ImageView" clickable="false" content-desc=""
+                                                      enabled="true" focusable="false" focused="false" index="0"
+                                                      long-clickable="false" package="com.huawei.android.launcher"
+                                                      password="false"
+                                                      resource-id="com.huawei.android.launcher:id/preview_background"
+                                                      scrollable="false" selected="false" text=""></node>
+                                                <node bounds="[297,911][541,1108]" checkable="false" checked="false"
+                                                      class="android.widget.TextView" clickable="false" content-desc=""
+                                                      enabled="true" focusable="false" focused="false" index="1"
+                                                      long-clickable="false" package="com.huawei.android.launcher"
+                                                      password="false"
+                                                      resource-id="com.huawei.android.launcher:id/folder_icon_name"
+                                                      scrollable="false" selected="false" text="�����"></node>
+                                            </node>
+                                            <node bounds="[800,600][1054,1108]" checkable="false" checked="false"
+                                                  class="android.widget.LinearLayout" clickable="true"
+                                                  content-desc="�ļ��� ϵͳӦ��" enabled="true" focusable="true"
+                                                  focused="false" index="8" long-clickable="true"
+                                                  package="com.huawei.android.launcher" password="false" resource-id=""
+                                                  scrollable="false" selected="false" text="">
+                                                <node bounds="[842,733][1012,903]" checkable="false" checked="false"
+                                                      class="android.widget.ImageView" clickable="false" content-desc=""
+                                                      enabled="true" focusable="false" focused="false" index="0"
+                                                      long-clickable="false" package="com.huawei.android.launcher"
+                                                      password="false"
+                                                      resource-id="com.huawei.android.launcher:id/preview_background"
+                                                      scrollable="false" selected="false" text=""></node>
+                                                <node bounds="[805,911][1049,1108]" checkable="false" checked="false"
+                                                      class="android.widget.TextView" clickable="false" content-desc=""
+                                                      enabled="true" focusable="false" focused="false" index="1"
+                                                      long-clickable="false" package="com.huawei.android.launcher"
+                                                      password="false"
+                                                      resource-id="com.huawei.android.launcher:id/folder_icon_name"
+                                                      scrollable="false" selected="false" text="ϵͳӦ��"></node>
+                                            </node>
+                                            <node bounds="[1054,600][1308,1108]" checkable="false" checked="false"
+                                                  class="android.widget.LinearLayout" clickable="true"
+                                                  content-desc="�ļ��� ��д��" enabled="true" focusable="true"
+                                                  focused="false" index="9" long-clickable="true"
+                                                  package="com.huawei.android.launcher" password="false" resource-id=""
+                                                  scrollable="false" selected="false" text="">
+                                                <node bounds="[1096,733][1266,903]" checkable="false" checked="false"
+                                                      class="android.widget.ImageView" clickable="false" content-desc=""
+                                                      enabled="true" focusable="false" focused="false" index="0"
+                                                      long-clickable="false" package="com.huawei.android.launcher"
+                                                      password="false"
+                                                      resource-id="com.huawei.android.launcher:id/preview_background"
+                                                      scrollable="false" selected="false" text=""></node>
+                                                <node bounds="[1059,911][1303,1108]" checkable="false" checked="false"
+                                                      class="android.widget.TextView" clickable="false" content-desc=""
+                                                      enabled="true" focusable="false" focused="false" index="1"
+                                                      long-clickable="false" package="com.huawei.android.launcher"
+                                                      password="false"
+                                                      resource-id="com.huawei.android.launcher:id/folder_icon_name"
+                                                      scrollable="false" selected="false" text="��д��"></node>
+                                            </node>
+                                            <node bounds="[38,1108][292,1616]" checkable="false" checked="false"
+                                                  class="android.widget.LinearLayout" clickable="true"
+                                                  content-desc="�ļ��� Office" enabled="true" focusable="true"
+                                                  focused="false" index="10" long-clickable="true"
+                                                  package="com.huawei.android.launcher" password="false" resource-id=""
+                                                  scrollable="false" selected="false" text="">
+                                                <node bounds="[80,1241][250,1411]" checkable="false" checked="false"
+                                                      class="android.widget.ImageView" clickable="false" content-desc=""
+                                                      enabled="true" focusable="false" focused="false" index="0"
+                                                      long-clickable="false" package="com.huawei.android.launcher"
+                                                      password="false"
+                                                      resource-id="com.huawei.android.launcher:id/preview_background"
+                                                      scrollable="false" selected="false" text=""></node>
+                                                <node bounds="[43,1419][287,1616]" checkable="false" checked="false"
+                                                      class="android.widget.TextView" clickable="false" content-desc=""
+                                                      enabled="true" focusable="false" focused="false" index="1"
+                                                      long-clickable="false" package="com.huawei.android.launcher"
+                                                      password="false"
+                                                      resource-id="com.huawei.android.launcher:id/folder_icon_name"
+                                                      scrollable="false" selected="false" text="Office"></node>
+                                            </node>
+                                            <node bounds="[292,1108][546,1616]" checkable="false" checked="false"
+                                                  class="android.widget.TextView" clickable="true" content-desc="����"
+                                                  enabled="true" focusable="true" focused="false" index="11"
+                                                  long-clickable="true" package="com.huawei.android.launcher"
+                                                  password="false" resource-id="" scrollable="false" selected="false"
+                                                  text="����"></node>
+                                            <node bounds="[800,1108][1054,1616]" checkable="false" checked="false"
+                                                  class="android.widget.LinearLayout" clickable="true"
+                                                  content-desc="�ļ��� ϵͳ����  7 ��֪ͨ" enabled="true" focusable="true"
+                                                  focused="false" index="12" long-clickable="true"
+                                                  package="com.huawei.android.launcher" password="false" resource-id=""
+                                                  scrollable="false" selected="false" text="">
+                                                <node bounds="[842,1241][1012,1411]" checkable="false" checked="false"
+                                                      class="android.widget.ImageView" clickable="false" content-desc=""
+                                                      enabled="true" focusable="false" focused="false" index="0"
+                                                      long-clickable="false" package="com.huawei.android.launcher"
+                                                      password="false"
+                                                      resource-id="com.huawei.android.launcher:id/preview_background"
+                                                      scrollable="false" selected="false" text=""></node>
+                                                <node bounds="[805,1419][1049,1616]" checkable="false" checked="false"
+                                                      class="android.widget.TextView" clickable="false" content-desc=""
+                                                      enabled="true" focusable="false" focused="false" index="1"
+                                                      long-clickable="false" package="com.huawei.android.launcher"
+                                                      password="false"
+                                                      resource-id="com.huawei.android.launcher:id/folder_icon_name"
+                                                      scrollable="false" selected="false" text="ϵͳ����"></node>
+                                            </node>
+                                            <node bounds="[546,1616][800,2124]" checkable="false" checked="false"
+                                                  class="android.widget.LinearLayout" clickable="true"
+                                                  content-desc="�ļ��� �ļ��� 2" enabled="true" focusable="true"
+                                                  focused="false" index="13" long-clickable="true"
+                                                  package="com.huawei.android.launcher" password="false" resource-id=""
+                                                  scrollable="false" selected="false" text="">
+                                                <node bounds="[588,1749][758,1919]" checkable="false" checked="false"
+                                                      class="android.widget.ImageView" clickable="false" content-desc=""
+                                                      enabled="true" focusable="false" focused="false" index="0"
+                                                      long-clickable="false" package="com.huawei.android.launcher"
+                                                      password="false"
+                                                      resource-id="com.huawei.android.launcher:id/preview_background"
+                                                      scrollable="false" selected="false" text=""></node>
+                                                <node bounds="[551,1927][795,2124]" checkable="false" checked="false"
+                                                      class="android.widget.TextView" clickable="false" content-desc=""
+                                                      enabled="true" focusable="false" focused="false" index="1"
+                                                      long-clickable="false" package="com.huawei.android.launcher"
+                                                      password="false"
+                                                      resource-id="com.huawei.android.launcher:id/folder_icon_name"
+                                                      scrollable="false" selected="false" text="�ļ��� 2"></node>
+                                            </node>
+                                        </node>
+                                        <node bounds="[38,0][1562,2124]" checkable="false" checked="false"
+                                              class="android.widget.FrameLayout" clickable="false" content-desc=""
+                                              enabled="true" focusable="false" focused="false" index="1"
+                                              long-clickable="false" package="com.huawei.android.launcher"
+                                              password="false" resource-id="" scrollable="false" selected="false"
+                                              text=""></node>
+                                        <node bounds="[38,0][1562,2124]" checkable="false" checked="false"
+                                              class="android.widget.RelativeLayout" clickable="false" content-desc=""
+                                              enabled="true" focusable="false" focused="false" index="2"
+                                              long-clickable="false" package="com.huawei.android.launcher"
+                                              password="false" resource-id="" scrollable="false" selected="false"
+                                              text=""></node>
+                                    </node>
+                                </node>
+                                <node bounds="[0,2138][1600,2218]" checkable="false" checked="false"
+                                      class="android.widget.ImageView" clickable="false" content-desc="" enabled="true"
+                                      focusable="false" focused="false" index="1" long-clickable="false"
+                                      package="com.huawei.android.launcher" password="false"
+                                      resource-id="com.huawei.android.launcher:id/dock_divider" scrollable="false"
+                                      selected="false" text=""></node>
+                                <node bounds="[0,2196][1600,2546]" checkable="false" checked="false"
+                                      class="android.widget.FrameLayout" clickable="false" content-desc=""
+                                      enabled="true" focusable="false" focused="false" index="2" long-clickable="false"
+                                      package="com.huawei.android.launcher" password="false"
+                                      resource-id="com.huawei.android.launcher:id/hotseat" scrollable="false"
+                                      selected="false" text="">
+                                    <node bounds="[0,2196][1600,2546]" checkable="false" checked="false"
+                                          class="android.widget.ImageView" clickable="true" content-desc="Dock ��Ӧ��"
+                                          enabled="true" focusable="true" focused="false" index="0"
+                                          long-clickable="false" package="com.huawei.android.launcher" password="false"
+                                          resource-id="com.huawei.android.launcher:id/bg_dock" scrollable="false"
+                                          selected="false" text=""></node>
+                                    <node bounds="[27,2196][1573,2546]" checkable="false" checked="false"
+                                          class="android.view.ViewGroup" clickable="false" content-desc=""
+                                          enabled="true" focusable="false" focused="false" index="1"
+                                          long-clickable="false" package="com.huawei.android.launcher" password="false"
+                                          resource-id="com.huawei.android.launcher:id/layout" scrollable="false"
+                                          selected="false" text="">
+                                        <node bounds="[65,2196][1535,2546]" checkable="false" checked="false"
+                                              class="android.view.ViewGroup" clickable="false" content-desc=""
+                                              enabled="true" focusable="false" focused="false" index="0"
+                                              long-clickable="false" package="com.huawei.android.launcher"
+                                              password="false" resource-id="" scrollable="false" selected="false"
+                                              text="">
+                                            <node bounds="[65,2196][319,2546]" checkable="false" checked="false"
+                                                  class="android.widget.TextView" clickable="true"
+                                                  content-desc="��Ϊ��Ƶ  191 ��֪ͨ" enabled="true" focusable="true"
+                                                  focused="false" index="0" long-clickable="true"
+                                                  package="com.huawei.android.launcher" password="false" resource-id=""
+                                                  scrollable="false" selected="false" text="��Ϊ��Ƶ"></node>
+                                            <node bounds="[369,2196][623,2546]" checkable="false" checked="false"
+                                                  class="android.widget.TextView" clickable="true" content-desc="����"
+                                                  enabled="true" focusable="true" focused="false" index="1"
+                                                  long-clickable="true" package="com.huawei.android.launcher"
+                                                  password="false" resource-id="" scrollable="false" selected="false"
+                                                  text="����"></node>
+                                            <node bounds="[673,2196][927,2546]" checkable="false" checked="false"
+                                                  class="android.widget.TextView" clickable="true"
+                                                  content-desc="�����ʼ�" enabled="true" focusable="true" focused="false"
+                                                  index="2" long-clickable="true" package="com.huawei.android.launcher"
+                                                  password="false" resource-id="" scrollable="false" selected="false"
+                                                  text="�����ʼ�"></node>
+                                            <node bounds="[977,2196][1231,2546]" checkable="false" checked="false"
+                                                  class="android.widget.TextView" clickable="true" content-desc="Chrome"
+                                                  enabled="true" focusable="true" focused="false" index="3"
+                                                  long-clickable="true" package="com.huawei.android.launcher"
+                                                  password="false" resource-id="" scrollable="false" selected="false"
+                                                  text="Chrome"></node>
+                                            <node bounds="[1281,2196][1535,2546]" checkable="false" checked="false"
+                                                  class="android.widget.TextView" clickable="true" content-desc="���"
+                                                  enabled="true" focusable="true" focused="false" index="4"
+                                                  long-clickable="true" package="com.huawei.android.launcher"
+                                                  password="false" resource-id="" scrollable="false" selected="false"
+                                                  text="���"></node>
+                                        </node>
+                                    </node>
+                                </node>
+                                <node bounds="[0,2546][1600,2560]" checkable="false" checked="false"
+                                      class="android.view.View" clickable="false" content-desc="" enabled="true"
+                                      focusable="false" focused="false" index="3" long-clickable="false"
+                                      package="com.huawei.android.launcher" password="false" resource-id=""
+                                      scrollable="false" selected="false" text=""></node>
+                            </node>
+                        </node>
+                    </node>
+                </node>
+            </node>
+        </hierarchy>
+    </body>
+</html>
