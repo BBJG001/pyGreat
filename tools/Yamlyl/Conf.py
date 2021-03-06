@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021/1/6 11:13 上午
 # @Author  : 百变金刚
-# @Content :
+# @Content : 实现可参考 https://gine.me/posts/d00e0623063b4edf843d571850c39f95
 import yaml
 
 class Conf():
