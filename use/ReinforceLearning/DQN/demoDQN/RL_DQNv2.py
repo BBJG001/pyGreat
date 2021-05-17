@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 import numpy as np
 from mazeEnv import Maze    # 这是一个我自己写的环境
+import time
 
 class DQN():
     def __init__(self,
@@ -91,11 +92,12 @@ if __name__ == '__main__':
     dqn = DQN(env.n_states, env.n_actions)
 
     print('Collecting experience...')
-    for i_episode in range(400):
+    for i_episode in range(200):
         s = env.reset()                 # 重置初始状态
         ep_r = 0
         while True:
             env.render()                # 刷新画面
+
             a = dqn.choose_action(s)    # 选择动作
             s_, r, done = env.step(a)   # 执行动作，获得下一个状态s_，回报r，是否结束标记done
             dqn.store_transition(s, a, r, s_)   # 存储 一步 的信息
@@ -113,24 +115,25 @@ if __name__ == '__main__':
     print('Testing . . .')
     # dqn.epsilon = 1
     rs = []
-    for state in range(50): # 打算循环测试50次测一测平均回报
+    for state in range(50): # 循环50次测一测平均回报
         s = env.reset()
         ep_r = 0
         while True:
             env.render()
+            time.sleep(0.5) # 测试阶段加延时放慢可视化
             a = dqn.choose_action(s)
             s_, r, done = env.step(a)
             ep_r += r
             # 测试阶段就不再有存储和学习了
             if done:
-                print(ep_r)
+                # print(ep_r)
                 rs.append(ep_r)
                 break
             s = s_
 
     env.close()
 
-    print(np.average(rs))
+    # print(np.average(rs))
     # v1: -25.63
     # v2_liner: -25.21
     # v2_relu:

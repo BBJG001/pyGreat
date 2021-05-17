@@ -1,0 +1,3 @@
+这是一行中文
+编码方式是utf8
+this is an English line

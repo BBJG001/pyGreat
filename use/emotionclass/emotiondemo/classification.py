@@ -16,6 +16,7 @@ TRAIN_PENCENT = 0.8     # 训练数据占的比重
 
 # 获得x,y
 x, y = do_data_helper()
+print(x[:100])
 # 切分出训练数据和测试数据
 train_num = int(len(y) * TRAIN_PENCENT)
 train_x = torch.tensor(x[:train_num]).unsqueeze(1)

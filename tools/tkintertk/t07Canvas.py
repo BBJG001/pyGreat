@@ -8,7 +8,7 @@ canvas = tk.Canvas(window, bg='blue', height=100, width=200)
 # 注意：tkinter中的坐标系左上角为原点，向右为x轴正向，向下为y轴正向
 
 # 在canvas（画布）上放张图片
-image_file = tk.PhotoImage(file='data/test1.gif')
+image_file = tk.PhotoImage(file='data/bag.png')
 image = canvas.create_image(5, 5, anchor='nw', image=image_file)
 # 首先传入的是锚点坐标
 # anchor指定图片的那个点为锚点可选值有n s w e nw ne sw se

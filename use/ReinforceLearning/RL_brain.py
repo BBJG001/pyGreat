@@ -11,14 +11,24 @@ class RL():
     def __init__(self):
         pass
 
-    def saveModel(self):
+    def chooseAction(self, observation):
+        pass
+
+    def learn(self, *args):
+        pass
+
+    def save(self, path):
         pass
 
     def saveParams(self):
         pass
 
-class QLearning:
+    def load(self, path):
+        pass
+
+class QLearning(RL):
     def __init__(self, actions_space, target, learning_rate=0.01, reward_decay=0.9, e_greedy=0.9):
+        super(QLearning, self).__init__()
         self.actions = actions_space    # 可以选择的动作空间
         self.target = target            # 目标状态（终点）
         self.lr = learning_rate         # 学习率
@@ -26,7 +36,7 @@ class QLearning:
         self.epsilon = e_greedy         # 探索/利用 贪婪系数
         self.q_table =pd.DataFrame(columns=range(self.actions.n), dtype=np.float64) # Q值表
 
-    def choose_action(self, observation):
+    def chooseAction(self, observation):
         self.check_state_exist(observation) # 调用这个函数的作用是检查Q值表中有无该状态，如果没有就向表中追加
         # 选择动作
         # 假设epsilon=0.9，下面的操作就是有0.9的概率按Q值表选择最优的，有0.1的概率随机选择动作
@@ -63,11 +73,14 @@ class QLearning:
                 )
             )
 
-    def saveModel(self):
-        pass
+    def save(self, path='./data/models/q_table.csv'):
+        self.q_table.to_csv(path)
 
     def saveParams(self):
         pass
+
+    def load(self, path='./data/models/q_table.csv'):
+        self.q_table = pd.read_csv(path)
 
 class DQN():
     def __init__(self,
@@ -166,7 +179,7 @@ if __name__ == '__main__':
 
         while True:
             # 基于当前状态选择动作
-            action = model.choose_action(observation)
+            action = model.chooseAction(observation)
             # 执行动作，获取回报
             observation_, reward, done = env.step(action)
             # 刷新画面

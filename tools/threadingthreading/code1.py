@@ -2,10 +2,8 @@ import threading
 
 def thread_job():
     print('This is an added Thread, number is %s'%threading.current_thread())
-<<<<<<< HEAD
     print(threading.currentThread().getName())
-=======
->>>>>>> dev2
+
 
 def main():
 

@@ -1,5 +1,35 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib
+import platform
+
+# 设置字体，支持中文显示
+if platform.system()=='Windows':
+    matplotlib.rcParams['font.family'] = 'STSong'
+else:
+    plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+    # plt.rcParams['font.sans-serif'] = ['Times New Roman']
+
+
+
+# 生成颜色
+def colorBuilder():
+    base = [hex(i) for i in range(40, 201, 20)]
+    for i in range(1000):
+        np.random.seed(i)
+        color = '#{}'.format(''.join([bi[-2:] for bi in np.random.choice(base, 3)]))
+        yield color
+
+# 字体设置，好多字体无法生效
+def testPlotFont():
+    from matplotlib import font_manager
+    for font in font_manager.fontManager.ttflist:
+        # 查看字体名以及对应的字体文件名
+        plt.rcParams['font.sans-serif'] = font.name
+        plt.figure()
+        plt.text(0.5,0.5, '{}: 中文汉字ZhongWenHanZi'.format(font.name), fontsize=20)
+        plt.show()
+        print(font.name, '-', font.fname)
 
 # 生成测试数据
 x = np.linspace(-3, 3, 50)
@@ -7,7 +37,7 @@ y1 = 2*x + 1
 y2 = x**2
 
 # 生成画布
-plt.figure(facecolor='grey')
+plt.figure(facecolor='grey', dpi=200)
 
 # figure()中的属性
 '''
@@ -24,6 +54,8 @@ plt.figure(facecolor='grey')
     
 **edgecolor='red'**
     边框颜色，默认是白色
+    
+dpi: 分辨率
 '''
 
 # 画图

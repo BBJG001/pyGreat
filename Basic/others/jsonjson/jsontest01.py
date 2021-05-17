@@ -25,7 +25,9 @@ print(jsonfromstr['url'])
 
 # 保存至json文件
 with open('jsondata.json', 'w') as f:
-    json.dump(data, f)  # 注意区别上面的dumps()方法，这里的dump()方法是构造json对象并写入文件，dumps()方法只是构造json对象
+    json.dump(data, f, indent=4)
+    # 注意区别上面的dumps()方法，这里的dump()方法是构造json对象并写入文件，dumps()方法只是构造json对象
+    # indent：缩进空格数，不设置不缩进，一行显示d
     # 会转换成字符串写入文件
 
 # 读取json文件

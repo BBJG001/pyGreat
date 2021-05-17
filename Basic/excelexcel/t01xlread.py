@@ -1,4 +1,4 @@
-import xlrd
+import xlrd # 交心版本不再对xls提供支持
 
 xlsx = xlrd.open_workbook('data/e03.xlsx')  # 打开表格
 table = xlsx.sheet_by_index(0)  # 通过sheet索引获取

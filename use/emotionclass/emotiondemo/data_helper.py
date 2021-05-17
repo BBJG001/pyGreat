@@ -102,14 +102,22 @@ def do_data_helper():
     print('padding demo res:\n', sentences_padded[0:2])
 
     # 构造生成词向量的模型
-    if not os.path.exists('data/models/w2vmodel.model'):
-        model = word2vec.Word2Vec(
-            sentences_padded, sg=1, size=100, window=1,
+    # if not os.path.exists('data/models/w2vmodel.model'):
+    #     model = word2vec.Word2Vec(
+    #         sentences_padded, sg=1, vector_size=100, window=1,
+    #         min_count=1, negative=3, sample=0.001, hs=1, workers=4
+    #     )
+    #     model.save('data/models/w2vmodel.model')
+    # else:
+    #     model = word2vec.Word2Vec.load('data/models/w2vmodel.model')
+
+    print(type(sentences_padded))
+    print(type(sentences_padded[0]))
+
+    model = word2vec.Word2Vec(
+            sentences_padded, sg=1, vector_size=100, window=1,
             min_count=1, negative=3, sample=0.001, hs=1, workers=4
         )
-        model.save('data/models/w2vmodel.model')
-    else:
-        model = word2vec.Word2Vec.load('data/models/w2vmodel.model')
 
     for i in range(len(sentences_padded)):
         newdata = np.array([np.array(model[word]) for word in sentences_padded[i]])

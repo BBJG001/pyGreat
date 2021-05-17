@@ -50,3 +50,7 @@ Thumbs.db
 
 # config file wiht private infomation
 *.own
+
+*.jpg
+*.png
+*.gif

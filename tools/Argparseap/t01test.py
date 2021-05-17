@@ -33,17 +33,17 @@ def baseUse():
     parser.add_argument('-s', '--sum', dest='accumulate', action='store_const', const=sum, default=max,
                         help='sum the integers (default: find the max)')    # 不传就计算max，传s就计算sum
     '''
-    name or flags - 一个命名或者一个选项字符串的列表，例如 foo 或 -f, --foo。
+    name or flags - 命令行中指定参数名，一个命名或者一个选项字符串的列表，例如 foo 或 -f, --foo。
+    dest - 属性名，被添加到 parse_args() 所返回对象上的属性名。位置参数默认就是这个里面的 add_argument('bar') bar；可选参数（--foo）就是foo
+    type - 命令行参数应当被转换成的类型。
+    default - 默认值，The value produced if the argument is absent from the command line and if it is absent from the namespace object.
+    required - 是否必须，此命令行选项是否可省略 （仅选项可用）。
+    help - 一个此选项作用的简单描述。
     action - 当参数在命令行中出现时使用的动作基本类型。
     nargs - 命令行参数应当消耗的数目；可以指定一个int值，?: 0或1个，*: 0个或多个（没什么意思，默认？），+: 1个或多个，没有会报错
-    const - 被一些 action 和 nargs 选择所需求的常数。
-    default - The value produced if the argument is absent from the command line and if it is absent from the namespace object.
-    type - 命令行参数应当被转换成的类型。
+    const - 被一些 action 和 nargs 选择所需求的常数。  
     choices - 可用的参数的容器。
-    required - 此命令行选项是否可省略 （仅选项可用）。
-    help - 一个此选项作用的简单描述。
-    metavar - 在使用方法消息中使用的参数值示例。
-    dest - 被添加到 parse_args() 所返回对象上的属性名。位置参数默认就是这个里面的 add_argument('bar') bar；可选参数（--foo）就是foo
+    metavar - 展示该参数的可以的示例
     '''
     # 将收集到的信息封装一个对象（个人理解）
     # args = parser.parse_args()
@@ -51,6 +51,7 @@ def baseUse():
     # 这样可以在程序内直接加参数
     args = parser.parse_args(['--sum', '7', '-1', '42'])
     args = parser.parse_args('--sum 7 -1 42'.split())
+    args.key = 'xxx'
 
     print(args.integers)    # [1, 2, 3]
     print(args.accumulate(args.integers))
@@ -66,17 +67,25 @@ def parse_args():
     parser.add_argument("-c", dest="yaml_file", metavar="yaml_file", default="apis/app_svr.yaml")
     parser.add_argument("-rec", "--env_record", dest="env_record", metavar="env_record: uat, pre, prod", default="prod")
     parser.add_argument("-rep", "--env_replay", dest="env_replay", metavar="env_replay: uat, pre, prod", default="pre")
-    parser.add_argument("-cc", "--color_record", dest="color_record", metavar="color_record", default=None)
+    parser.add_argument("-缩写", "--缩写的全写",
+                        dest="调用的时候的属性值，无该属性默认是全写",
+                        metavar="参数示例这个参数可以是[1,2,3]中的值; ",
+                        help='帮助信息',
+                        required=False, # 是不是必须的
+                        default='默认值')
+    #  -缩写 参数示例这个参数可以是[1,2,3]中的值, --缩写的全写 参数示例这个参数可以是[1,2,3]中的值
+    #                         帮助信息
     parser.add_argument("-cp", "--color_replay", dest="color_replay", metavar="color_replay", default=None)
     parser.add_argument("-n", "--api_size", type=int, dest="api_size", metavar="api num from ops-log", default=10)
     return parser.parse_args()
 
 def testParse_args():
     args = parse_args()
+    args.api_size = 100
     print(type(args))
     print(args)
 
 if __name__ == '__main__':
-    # testParse_args()
-    baseUse()
+    testParse_args()
+    # baseUse()
 

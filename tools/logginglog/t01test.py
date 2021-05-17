@@ -18,6 +18,10 @@ import yaml
 # ERROR	由于更严重的问题，软件已不能执行一些功能了。
 # CRITICAL	严重错误，表明软件已不能继续运行了。
 
+# handler配置level不能生效
+# 在创建 handler之前将默认root logger的handler拉低
+# logging.root.setLevel(logging.NOTSET)
+
 def test2Terminal():
     logging.basicConfig(format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s',
                         level=logging.DEBUG)
@@ -101,7 +105,7 @@ def testBoth2():
     console.setLevel(logging.INFO)  # 控制台的level
     formatter = logging.Formatter('%(levelname)-8s: %(message)s')   # 设置日志打印格式
     console.setFormatter(formatter)
-    logging.getLogger('').addHandler(console)
+    logging.getLogger().addHandler(console)
 
 # handler配置level不能生效
 # 在创建 handler之间将默认root logger的handler拉低
@@ -173,7 +177,7 @@ def testTimeRotatingLog():
         “M”: Minutes
         “H”: Hours
         “D”: Days
-        “W”: Week day (0=Monday)
+        “W”: Week day (0=Monday)，这里应该为 when='W0' or W1 W2 ，，，
     “midnight”: Roll over at midnight
     interval: 滚动周期，单位有when指定，比如：when=’D’,interval=1，表示每天产生一个日志文件；
     backupCount: 表示日志文件的保留个数，超过之后会依次删除最早创建的,=0就不会删除。。。

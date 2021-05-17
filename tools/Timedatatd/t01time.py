@@ -52,7 +52,17 @@ def testbasic():
     print(time_t.tm_isdst)   # 是否为夏时令（默认0）
 
 def timeConvert():
-    #时间戳-->结构化时间(time.struct_time)
+    # 时间戳时间，long数字型
+    # 元祖时间，结构化时间
+    # 字符串时间，可以自定义结构的
+
+    # 直接把时间戳时间转化为字符串时间
+    # 似乎time下没有这种直接的方式
+    str_time = time.strftime("%Y-%m-%d %H:%M:%S",time.localtime(time.time()))
+
+
+
+    #时间戳-->（元祖）结构化时间(time.struct_time)
     #time.gmtime(时间戳)    #UTC时间，与英国伦敦当地时间一致
     #time.localtime(时间戳) #当地时间。例如我们现在在北京执行这个方法：与UTC时间相差8小时，UTC时间+8小时 = 北京时间
     time.gmtime(1500000000)
@@ -64,7 +74,7 @@ def timeConvert():
     #time.mktime(结构化时间)
     time_tuple = time.localtime(1500000000)
     time.mktime(time_tuple)
-    1500000000.0
+    # 1500000000.0
 
     #结构化时间-->字符串时间
     # time.strftime("格式定义","结构化时间")  结构化时间参数若不传，则显示当前时间
@@ -73,7 +83,7 @@ def timeConvert():
     time.strftime("%Y-%m-%d",time.localtime(1500000000))
     # '2017-07-14'
 
-    #字符串时间-->结构化时间
+    #字符串时间-->（元祖）结构化时间
     #time.strptime(时间字符串,字符串对应格式)
     time.strptime("2017-03-16","%Y-%m-%d")
     # time.struct_time(tm_year=2017, tm_mon=3, tm_mday=16, tm_hour=0, tm_min=0, tm_sec=0, tm_wday=3, tm_yday=75, tm_isdst=-1)
@@ -93,6 +103,8 @@ def timeConvert():
     'Mon Jul 24 15:19:07 2017'
     time.ctime(1500000000)
     'Fri Jul 14 10:40:00 2017'
+
+
 
 if __name__ == '__main__':
     testbasic()

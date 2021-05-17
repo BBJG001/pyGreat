@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
+# https://wanakiki.github.io/2020/spider-with-proxy/
 
 class GetIp(object):
     """抓取代理IP"""

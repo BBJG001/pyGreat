@@ -5,6 +5,14 @@
 # @Content :
 import re
 
+ss = '{"_index":"billions-main.common-arch.image-service-@2021.03.29-jssz02-2","_type":"logs","_id":"AXh9NI-FSHWbpB7TunWx","_score":0,"_source":{"@timestamp":1617008279000,"app_id":"main.common-arch.image-service","bucket":"archive","cache_hit":0,"code":0,"content":"finish request status:OK","cost_ms":27,"env":"prod","from":"172.25.35.74:33992","instance_id":"image-service-392162-86cb6cd5f-xbq74","key":"/bfs/archive/89ecd8c86845f304ee3c4ca20dfdb6793337b246.jpg","level":"INFO","method":"legacy_bfs_POST","param":"280w_158h_1c_100q.jpg","req_size":63517,"resp_size":38250,"source":"rpc_service.cpp:104","style":"nostyle","zone":"sh004"}}'
+reg = re.compile(r'.*"key":"(?P<ipath>.*?)".*')
+res_match = reg.match(ss)
+res = res_match.groupdict()
+print(res['ipath'])
+# /bfs/archive/89ecd8c86845f304ee3c4ca20dfdb6793337b246.jpg
+
+
 compiled_re = re.compile(r"r[ua]n")     # 把正则规则封装进一个正则对象
 print(compiled_re.search("dog ran to cat")) # 在字符串上应用正则对象
 # <_sre.SRE_Match object; span=(4, 7), match='ran'>

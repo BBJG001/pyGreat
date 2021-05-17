@@ -4,7 +4,7 @@ import numpy as np
 
 # # 设置字体，支持中文显示
 # matplotlib.rcParams['font.family'] = 'STSong'
-
+plt.rcParams['font.sans-serif'] = ['Times New Roman']
 x = np.linspace(-3, 3, 50)
 y1 = 2 * x + 1
 y2 = x ** 2

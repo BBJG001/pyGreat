@@ -35,7 +35,7 @@ rescombine = np.hstack((c,d))
 
 # np.concatenate((A,B,B,A),axis=0)：多个矩阵合并
 ## 先测试二维数据
-rescombine = np.concatenate((c,d,d,c),axis=0)
+rescombine = np.concatenate((c,d,d,c),axis=0)   # 0就是行数变多
 # [[ 1  2  3]
 #  [ 4  5  6]
 #  [10 20 30]

@@ -1,5 +1,7 @@
 网络连接
 
+快速访问：$PROJECTDIR/Basic/knowledge/internetconnection
+
 现在网络连接的协议也有很多了
 
 这里应用一下

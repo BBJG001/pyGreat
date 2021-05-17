@@ -5,15 +5,15 @@ from queue import Queue
 import copy
 import time
 
-def job(l, q):
-    res = sum(l)
+def job(q):
+    res = sum([1,2,3])
     q.put(res)
 
 def multithreading(l):
     q = Queue()
     threads = []
     for i in range(4):
-        t = threading.Thread(target=job, args=(l, q))
+        t = threading.Thread(target=job, args=(q,)) # 这里的参数必须是可迭代的，只有1个参数的时候需要加 ,
         t.start()
         threads.append(t)
     for tt in threads:
